@@ -38,9 +38,9 @@ a:hover{
     text-decoration: underline;
     text-transform: lowercase;
 }
-.manu-button{
+#manu-button{
     cursor: pointer;
-    display: flex;
+    display: none;
     padding-right: 14px;
 }
 .sidebar{
@@ -53,13 +53,13 @@ a:hover{
     transition: 0.5s;
     color: rgb(92, 166, 190);
     z-index: 1;
-    display: flex;
+    display: none;
     align-items: center;
 
     gap: 10px;
     flex-direction: column; 
 }
-.sidebar .close-button{
+.sidebar #close-button{
     position: absolute;
     padding-right: 14px;
   cursor: pointer;
@@ -84,13 +84,59 @@ a:hover{
     width: 100%;
     text-align: center;
 }
+.pc-sizetoggle{
+   cursor: pointer;
+    width: 35px;
+    height: 35px;
+    border-radius: 30%;
+    background-color: rgb(68, 67, 67);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.iner-ins {
+    border-radius: 20px;
+    height: 20px;
+   width: 20px;
+   background-color: white;
+    position: absolute;
+    margin: 2px;
+    right: 0;
+    
+}
+
+
+
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+.sidebar.dark-mode{
+    background-color: #222;
+
+}
+
+body.dark-mode nav {
+    background-color: #222;
+}
+.clorechange{
+    background-color: white;
+}
+.sun{
+    background-color: black;
+    left: 0;
+}
 
 @media (max-width: 600px){
   .options{
     display: none;
   }
- .manu-button{
+ #manu-button{
     display: block;
   } 
+ .pc-sizetoggle {
+    display: none;
+  }
 
 }
