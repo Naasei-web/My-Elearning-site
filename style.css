@@ -183,3 +183,43 @@ button:hover{
     background-color: #8fc6d8;
     color: rgb(78, 108, 116);
 }
+.section2{
+display: flex;
+flex-direction: column;
+      width: 100%;
+    height: 100%;
+    padding: 20px;
+    background-color: transparent;
+}
+.courses-arrengment{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    grid-column: 10px;
+    flex-wrap: wrap;
+}
+.courses-card{
+   padding: 20px;
+  height: 500px;
+  width: 400px;
+    border: 1px solid #5ca6be;
+    border-radius: 6px;
+    color: white;
+    background-color: #5ca6be;
+    cursor: pointer;
+    gap: 6px;
+    margin: 10px;
+
+}
+.courses-card:hover{
+padding: 25px;
+
+}
+.CB {
+    background-color: #e8f8ff;
+    color: #5ca6be;
+    padding: 6px;
+}
