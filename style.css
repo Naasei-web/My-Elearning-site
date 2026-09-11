@@ -239,4 +239,110 @@ padding: 25px;
     width: 100%;
     color: #5ca6be;
 }
+.Af{
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 6px;
+    color: #447a8b;
+}
+.section3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 26px;
+    padding: 64px 20px 72px;
+    min-height: 430px;
+    background-color: white;
+    width: 100%;
+}
+.partners-heading {
+    max-width: 620px;
+    text-align: center;
+}
+.partners-heading h2 {
+    color: #254b58;
+    font-size: 2rem;
+    margin: 6px 0 8px;
+}
+.partners-heading p {
+    color: #447a8b;
+}
+.eyebrow {
+    color: #e08b25;
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.partners-wheel-wrap {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    max-width: 1100px;
+    min-width: 0;
+    width: 100%;
+}
+.partners-wheel {
+    display: flex;
+    gap: 18px;
+    flex: 1 1 auto;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: #5ca6be transparent;
+    min-width: 0;
+    padding: 8px 4px 18px;
+    width: 100%;
+}
+.partner-card {
+    align-items: center;
+    background: rgba(255, 255, 255, 0.88);
+    border: 1px solid rgba(92, 166, 190, 0.3);
+    border-radius: 6px;
+    display: flex;
+    flex: 0 0 190px;
+    height: 150px;
+    justify-content: center;
+    padding: 18px;
+    box-shadow: 0 8px 18px rgba(37, 75, 88, 0.1);
+}
+.partner-card img {
+    height: 100%;
+    object-fit: contain;
+    width: 100%;
+}
+.wheel-button {
+    background-color: #5ca6be;
+    border-radius: 50%;
+    flex: 0 0 44px;
+    font-size: 1.4rem;
+    height: 44px;
+    padding: 0;
+    width: 44px;
+}
+.wheel-button:hover {
+    padding: 0;
+}
+@media (max-width: 600px){
+    .section3 {
+        padding: 48px 12px 56px;
+    }
+    .partners-heading h2 {
+        font-size: 1.6rem;
+    }
+    .partners-wheel-wrap {
+        gap: 7px;
+    }
+    .partner-card {
+        flex-basis: 160px;
+        height: 130px;
+    }
+    .wheel-button {
+        flex-basis: 36px;
+        height: 36px;
+        width: 36px;
+    }
+}
 
