@@ -15,14 +15,30 @@ max-width: 100%;
 height: auto;
 }
 nav{
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 13px;
-    background-color: rgb(92, 166, 190);
+    background-color: #5ca6be;
     height: 80px;
     box-shadow: 5px 5px 5px rgb(165, 164, 164);
 
+}
+.logo {
+    align-items: center;
+    display: flex;
+    height: 54px;
+    width: 54px;
+}
+.logo img {
+    display: block;
+    height: 100%;
+    object-fit: contain;
+    width: 100%;
 }
 a{
     text-decoration: none;
@@ -122,6 +138,34 @@ body.dark-mode {
 
 body.dark-mode nav {
     background-color: #222;
+}
+body.dark-mode .login-page {
+    background: linear-gradient(135deg, #121212 0%, #1d2d33 55%, #30271d 100%);
+}
+body.dark-mode .login-panel {
+    background-color: #1f292d;
+    border-color: rgba(199, 230, 237, 0.2);
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.35);
+}
+body.dark-mode .login-copy h1,
+body.dark-mode .login-form label {
+    color: #e8f8ff;
+}
+body.dark-mode .login-copy p,
+body.dark-mode .login-signup,
+body.dark-mode .password-label-row a,
+body.dark-mode .login-signup a {
+    color: #c7e6ed;
+}
+body.dark-mode .login-form input[type="text"],
+body.dark-mode .login-form input[type="email"],
+body.dark-mode .login-form input[type="password"] {
+    background-color: #12191c;
+    border-color: #447a8b;
+    color: #e8f8ff;
+}
+body.dark-mode .login-form input::placeholder {
+    color: #9bbbc4;
 }
 .clorechange{
     background-color: white;
@@ -242,6 +286,89 @@ padding: 25px;
     width: 100%;
     color: #5ca6be;
 }
+.login-page {
+    align-items: center;
+    background: linear-gradient(135deg, #e8f8ff 0%, #ffffff 55%, #fff4e7 100%);
+    display: flex;
+    justify-content: center;
+    min-height: calc(100vh - 80px);
+    padding: 50px 20px;
+}
+.login-panel {
+    background-color: white;
+    border: 1px solid rgba(92, 166, 190, 0.24);
+    border-radius: 8px;
+    box-shadow: 0 18px 45px rgba(37, 75, 88, 0.14);
+    display: grid;
+    gap: 46px;
+    grid-template-columns: minmax(220px, 0.85fr) minmax(280px, 1fr);
+    max-width: 850px;
+    padding: 52px;
+    width: 100%;
+}
+.login-copy h1 {
+    color: #254b58;
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.08;
+    margin: 10px 0 18px;
+}
+.login-copy p {
+    color: #447a8b;
+    line-height: 1.7;
+}
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.login-form label {
+    color: #254b58;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+.login-form input[type="text"],
+.login-form input[type="email"],
+.login-form input[type="password"] {
+    border: 1px solid #b7d8e1;
+    border-radius: 4px;
+    color: #254b58;
+    font-size: 1rem;
+    padding: 14px;
+    width: 100%;
+}
+.login-form input:focus {
+    border-color: #5ca6be;
+    outline: 2px solid rgba(92, 166, 190, 0.2);
+}
+.password-label-row {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+.password-label-row a,
+.login-signup a {
+    color: #447a8b;
+    padding: 0;
+}
+.remember-option {
+    align-items: center;
+    display: flex;
+    gap: 8px;
+    margin: 8px 0 12px;
+}
+.remember-option input {
+    accent-color: #5ca6be;
+}
+.login-form button {
+    width: 100%;
+}
+.login-signup {
+    color: #447a8b;
+    font-size: 0.9rem;
+    margin-top: 12px;
+    text-align: center;
+}
 .Af{
     font-size: 1.5rem;
     font-weight: 500;
@@ -272,7 +399,6 @@ padding: 25px;
     color: #447a8b;
 }
 .eyebrow {
-    color: #e08b25;
     font-size: 0.8rem;
     font-weight: bold;
     letter-spacing: 2px;
@@ -446,6 +572,14 @@ padding: 25px;
     margin: 0;
 }
 @media (max-width: 600px){
+    .login-page {
+        padding: 28px 14px;
+    }
+    .login-panel {
+        gap: 30px;
+        grid-template-columns: 1fr;
+        padding: 30px 22px;
+    }
     .section3 {
         padding: 48px 12px 56px;
     }

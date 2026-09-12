@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in | Skiller</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="assests/new.png">
+</head>
+<body>
+    <nav>
+        <div class="logo"><img src="assests/white-s-logo.ico" alt="Skiller logo"></div>
+        <div class="options">
+            <a href="index.html">HOME</a>
+            <a href="courses.html">COURSES</a>
+            <a href="login.html" aria-current="page">LOG IN</a>
+        </div>
+        <div class="pc-sizetoggle"><div class="iner-ins"></div></div>
+        <div id="manu-button"><img src="assests/menu-closer.svg" width="30" height="30" alt="Open menu"></div>
+        <div class="sidebar">
+            <span id="close-button"><img src="assests/x.svg" alt="Close menu"></span>
+            <a href="index.html">HOME</a>
+            <a href="courses.html">COURSES</a>
+            <a href="login.html" aria-current="page">LOG IN</a>
+        </div>
+    </nav>
+
+    <main class="login-page">
+        <section class="login-panel" aria-labelledby="login-title">
+            <div class="login-copy">
+                <span class="eyebrow">Welcome back</span>
+                <h1 id="login-title">Continue learning at your pace.</h1>
+                <p>Log in to pick up where you left off and keep building skills that move you forward.</p>
+            </div>
+
+            <form class="login-form">
+                <label for="email">Email address</label>
+                <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+                <div class="password-label-row">
+                    <label for="password">Password</label>
+                    <a href="#">Forgot password?</a>
+                </div>
+                <input id="password" name="password" type="password" autocomplete="current-password" placeholder="Enter your password" required>
+                <label class="remember-option" for="remember">
+                    <input id="remember" name="remember" type="checkbox">
+                    <span>Remember me</span>
+                </label>
+                <button type="submit">Log in</button>
+                <p class="login-signup">New to Skiller? <a href="signup.html">Create an account</a></p>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

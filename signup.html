@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up | Skiller</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="assests/new.png">
+</head>
+<body>
+    <nav>
+        <div class="logo"><img src="assests/white-s-logo.ico" alt="Skiller logo"></div>
+        <div class="options">
+            <a href="index.html">HOME</a>
+            <a href="courses.html">COURSES</a>
+            <a href="login.html">LOG IN</a>
+            <a href="signup.html" aria-current="page">SIGN UP</a>
+        </div>
+        <div class="pc-sizetoggle"><div class="iner-ins"></div></div>
+        <div id="manu-button"><img src="assests/menu-closer.svg" width="30" height="30" alt="Open menu"></div>
+        <div class="sidebar">
+            <span id="close-button"><img src="assests/x.svg" alt="Close menu"></span>
+            <a href="index.html">HOME</a>
+            <a href="courses.html">COURSES</a>
+            <a href="login.html">LOG IN</a>
+            <a href="signup.html" aria-current="page">SIGN UP</a>
+        </div>
+    </nav>
+
+    <main class="login-page">
+        <section class="login-panel" aria-labelledby="signup-title">
+            <div class="login-copy">
+                <span class="eyebrow">Start learning</span>
+                <h1 id="signup-title">Build skills for what comes next.</h1>
+                <p>Create your free Skiller account and begin learning practical digital skills at your own pace.</p>
+            </div>
+
+            <form class="login-form">
+                <label for="name">Full name</label>
+                <input id="name" name="name" type="text" autocomplete="name" placeholder="Enter your full name" required>
+                <label for="email">Email address</label>
+                <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+                <label for="password">Password</label>
+                <input id="password" name="password" type="password" autocomplete="new-password" placeholder="Create a password" minlength="8" required>
+                <label for="confirm-password">Confirm password</label>
+                <input id="confirm-password" name="confirm-password" type="password" autocomplete="new-password" placeholder="Repeat your password" minlength="8" required>
+                <label class="remember-option" for="terms">
+                    <input id="terms" name="terms" type="checkbox" required>
+                    <span>I agree to the terms and privacy policy.</span>
+                </label>
+                <button type="submit">Create account</button>
+                <p class="login-signup">Already have an account? <a href="login.html">Log in</a></p>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
